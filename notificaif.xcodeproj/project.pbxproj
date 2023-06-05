@@ -13,6 +13,10 @@
 		A32E5CC92A28E2D200C39C87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32E5CC72A28E2D200C39C87 /* Main.storyboard */; };
 		A32E5CCB2A28E2D500C39C87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32E5CCA2A28E2D500C39C87 /* Assets.xcassets */; };
 		A32E5CCE2A28E2D500C39C87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32E5CCC2A28E2D500C39C87 /* LaunchScreen.storyboard */; };
+		A368260D2A2E1C6100173ABD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A368260C2A2E1C6100173ABD /* Coordinator.swift */; };
+		A368260F2A2E1CF800173ABD /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A368260E2A2E1CF800173ABD /* LoginCoordinator.swift */; };
+		A36826122A2E200400173ABD /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36826112A2E200400173ABD /* LogView.swift */; };
+		A36826142A2E203000173ABD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36826132A2E203000173ABD /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		A32E5CCA2A28E2D500C39C87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A32E5CCD2A28E2D500C39C87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A32E5CCF2A28E2D500C39C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A368260C2A2E1C6100173ABD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A368260E2A2E1CF800173ABD /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		A36826112A2E200400173ABD /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		A36826132A2E203000173ABD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		A32E5CC02A28E2D200C39C87 /* notificaif */ = {
 			isa = PBXGroup;
 			children = (
+				A36826102A2E1FD000173ABD /* Controller */,
+				A368260B2A2E1C2700173ABD /* Coordinator */,
+				A368260A2A2E175100173ABD /* Resource */,
+				A32E5CCF2A28E2D500C39C87 /* Info.plist */,
+			);
+			path = notificaif;
+			sourceTree = "<group>";
+		};
+		A368260A2A2E175100173ABD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
 				A32E5CC12A28E2D200C39C87 /* AppDelegate.swift */,
 				A32E5CC32A28E2D200C39C87 /* SceneDelegate.swift */,
 				A32E5CC52A28E2D200C39C87 /* ViewController.swift */,
 				A32E5CC72A28E2D200C39C87 /* Main.storyboard */,
 				A32E5CCA2A28E2D500C39C87 /* Assets.xcassets */,
 				A32E5CCC2A28E2D500C39C87 /* LaunchScreen.storyboard */,
-				A32E5CCF2A28E2D500C39C87 /* Info.plist */,
 			);
-			path = notificaif;
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A368260B2A2E1C2700173ABD /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A368260C2A2E1C6100173ABD /* Coordinator.swift */,
+				A368260E2A2E1CF800173ABD /* LoginCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A36826102A2E1FD000173ABD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A36826112A2E200400173ABD /* LogView.swift */,
+				A36826132A2E203000173ABD /* LoginViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A36826142A2E203000173ABD /* LoginViewController.swift in Sources */,
+				A368260D2A2E1C6100173ABD /* Coordinator.swift in Sources */,
+				A36826122A2E200400173ABD /* LogView.swift in Sources */,
 				A32E5CC62A28E2D200C39C87 /* ViewController.swift in Sources */,
+				A368260F2A2E1CF800173ABD /* LoginCoordinator.swift in Sources */,
 				A32E5CC22A28E2D200C39C87 /* AppDelegate.swift in Sources */,
 				A32E5CC42A28E2D200C39C87 /* SceneDelegate.swift in Sources */,
 			);
